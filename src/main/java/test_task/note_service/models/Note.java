@@ -11,9 +11,11 @@ import java.util.Date;
 
 @Entity //Определяем сущность как объект хранимый в БД
 public class Note {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String text;
     @NotNull
     @Column(name = "user_id")
