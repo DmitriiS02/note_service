@@ -1,11 +1,10 @@
 package test_task.note_service.models;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
 import java.time.LocalDateTime;
-import java.util.Date;
+
 
 //Здесь мы описываем сущность Заметки
 

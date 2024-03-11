@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import test_task.note_service.models.User;
 import test_task.note_service.models.Note;
-import test_task.note_service.repo.UserRepo;
+
 import test_task.note_service.service.UserService;
 
 import java.util.List;
