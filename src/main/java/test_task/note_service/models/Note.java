@@ -6,7 +6,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 import java.time.LocalDateTime;
 
 
-//Здесь мы описываем сущность Заметки
+//Здесь мы описываем сущность Заметки b
 
 @Entity //Определяем сущность как объект хранимый в БД
 public class Note {
