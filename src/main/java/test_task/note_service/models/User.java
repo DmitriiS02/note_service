@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Table(name = "user_storage")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Используем camelCase
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String login;
     private String surname;
