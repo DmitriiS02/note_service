@@ -32,8 +32,8 @@ public class UserService {
         userRepo.save(user);
     }
 
-    public List<Note> getUserNotes(Long userId){
-       return notesRepo.findAllByParentId(userId);
+    public List<Note> getUserNotes(User user){
+       return notesRepo.findAllByUserId(user);
     }
 
 

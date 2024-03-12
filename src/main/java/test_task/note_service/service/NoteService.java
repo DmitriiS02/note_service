@@ -20,15 +20,15 @@ public class NoteService {
 
     public void createNoteForUser (Note note){
 
-        Long userId = note.getUserId();
-        User user = userRepo.findById(userId).orElseThrow(() -> new IllegalArgumentException("User not found with id: " + userId));
+        User user = note.getUser();
+        user = userRepo.findById(user.getId()).orElseThrow(() -> new IllegalArgumentException("User not found with such id: "));
         if(note.getCreationDate()==null){
             note.setCreationDate(LocalDateTime.now());
         }
         if(note.getDueDate() == null){
             note.setDueDate(LocalDateTime.now().plusDays(3));
         }
-        note.setUserId(userId);
+        note.setUser(user);
         note.setStatus(NoteStatus.ACTIVE);
         notesRepo.save(note);
 

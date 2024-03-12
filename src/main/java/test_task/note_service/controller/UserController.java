@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping
-    public List<Note> getUserNotes(@RequestBody Long userId){
-        return userService.getUserNotes(userId);
+    public List<Note> getUserNotes(@RequestBody User user){
+        return userService.getUserNotes(user);
     }
 }
